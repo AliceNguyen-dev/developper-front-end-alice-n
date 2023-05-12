@@ -54,7 +54,7 @@ function Home() {
                 <p className="desc-infos fadeIn">
                    Titulaire d'un Bac Professionnel ASSP et d'un diplôme de Développeur Full Stack de niveau Bac+4, j'ai suivi une formation intensive de Développeur Web et Web Mobile chez Social Builder, d'une durée de 3 mois, suivie d'un stage d'un mois dans une entreprise du secteur du tourisme et de l'hôtellerie de luxe.
 
-Après cette période de stage, j'ai effectué une formation en alternance de deux ans en tant que Développeur Full chez Cloud Campus. Au cours de cette formation en alternance de deux ans, j'ai effectué une année d'alternance en tant que Développeur Full Stack dans une agence web, puis une autre année en tant que Développeur Front-End dans une entreprise spécialisée dans la gestion des salariés en entreprise
+Après cette période de stage, j'ai effectué une formation en alternance de deux ans en tant que Développeur Full Stack chez Cloud Campus. Au cours de cette formation en alternance de deux ans, j'ai effectué une année d'alternance en tant que Développeur Full Stack dans une agence web, puis une autre année en tant que Développeur Front-End dans une entreprise spécialisée dans la gestion des salariés en entreprise
         </p>
             </div>
 
