@@ -1,0 +1,225 @@
+/* responsive mobile */
+@media screen and (max-width:767px) {
+    .sect1 {
+        animation: fadeInLeft 1s ease-in-out;
+    }
+
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .sect2 {
+        animation: fadeInRight 1s ease-in-out;
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(300px);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .coord {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 2px;
+        gap: 2px;
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+    .messApp {
+        background-color: rgb(238, 245, 250);
+        margin: 20px auto;
+        width: 90%;
+        height: 430px;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .tab-info {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 20px;
+        gap: 2px;
+    }
+
+    input[type="text" i] {
+        border-radius: 10px;
+        border-color: transparent;
+        height: 40px;
+        width: 210px;
+    }
+
+    input[type="text-area" i] {
+        border-radius: 10px;
+        border-color: transparent;
+        height: 40px;
+        width: 210px;
+    }
+
+    input[type="email" i] {
+        border-radius: 10px;
+        border-color: transparent;
+        height: 40px;
+        width: 210px;
+    }
+
+    .btn-contact {
+        width: 220px;
+        height: 55px;
+        margin: 15px auto;
+        padding: 10px;
+        border-radius: 10px;
+        border-color: transparent;
+        background: #3c84f7;
+        color: white;
+        font-size: 17px;
+        font-family: 'Now Bold', sans-serif;
+    }
+
+    .form-label {
+        font-family: 'Now Bold', sans-serif;
+        font-size: 15px;
+        color: gray;
+    }
+
+    .imgG {
+        width: 96%;
+        height: 275px;
+    }
+
+    .space-bas {
+        text-align: end;
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+/* Tablettes en mode portrait */
+@media screen and (max-width: 991px) {}
+
+
+/* responsive desktop */
+@media screen and (min-width:1200px) {
+    .sect1 {
+        animation: fadeInLeft 1s ease-in-out;
+    }
+
+    @keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .sect2 {
+        animation: fadeInRight 1s ease-in-out;
+    }
+
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(300px);
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .coord {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 2px;
+        gap: 2px;
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+    .messApp {
+        background-color: rgb(238, 245, 250);
+        margin: 20px auto;
+        width: 90%;
+        height: 430px;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .tab-info {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 20px;
+        gap: 2px;
+    }
+
+    input[type="text" i] {
+        border-radius: 10px;
+        border-color: transparent;
+        height: 40px;
+        width: 500px;
+    }
+
+    input[type="text-area" i] {
+        border-radius: 10px;
+        border-color: transparent;
+        height: 40px;
+        width: 500px;
+    }
+
+    input[type="email" i] {
+        border-radius: 10px;
+        border-color: transparent;
+        height: 40px;
+        width: 500px;
+    }
+
+    .btn-contact {
+        width: 220px;
+        height: 55px;
+        margin: 15px auto;
+        padding: 10px;
+        border-radius: 10px;
+        border-color: transparent;
+        background: #3c84f7;
+        color: white;
+        font-size: 17px;
+        font-family: 'Now Bold', sans-serif;
+    }
+
+    .form-label {
+        font-family: 'Now Bold', sans-serif;
+        font-size: 15px;
+        color: gray;
+    }
+
+    .imgG {
+        width: 60%;
+        height: 501px;
+    }
+
+    .space-bas {
+        text-align: end;
+        margin: 10px;
+        padding: 10px;
+    }
+}

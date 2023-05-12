@@ -1,38 +1,458 @@
-.App {
-  text-align: center;
-}
+/* responsive mobile */
+@media screen and (max-width:767px) {
+  .body {
+    background-image: url("./assets/bg-body.jpg");
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .bg-header {
+    background: white;
+    width: 384px;
+    height: 2790px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
+
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .route-app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    height: 835px;
+    box-shadow: 3px 2px 13px rgb(61, 60, 60, 0.4);
+    width: 400px;
+    margin: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+    margin: -40px;
+    box-shadow: 3px 2px 13px rgb(61, 60, 60, 0.4);
+    border-radius: 15px;
+  }
+
+  .infos {
+    /* background: wheat; */
+    width: 296px;
+    margin: 102px 0px 0px 67px;
+  }
+
+
+  .title {
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    margin: 15px;
+    padding: 15px;
+    font-weight: 500;
+  }
+
+  .post {
+    color: rgba(174, 171, 171, 0.834);
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .infos02 {
+    background: #FFF5E4;
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+    border-radius: 15px;
+  }
+
+  .box-display {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px 30px;
+  }
+
+  .icons {
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+  }
+
+  .boxTab {
+    background: #f6d69036;
+    width: 300px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 25px 20px;
+    text-align: initial;
+  }
+
+  .text-desc {
+    font-family: 'Now Bold', sans-serif;
+    font-size: 14px;
+  }
+
+  .sub-title {
+    font-size: 13px;
+    color: gray;
+    font-family: 'Now Bold', sans-serif;
+  }
+
+  .infos03 {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .iconsTab {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+  }
+
+  .boxFlex {
+    padding: 0px 20px;
+  }
+
+  .iconsItem {
+    display: flex;
+  }
+
+  .pdf-doc {
+    margin: 10px auto;
+    font-family: 'Now Bold', sans-serif;
+  }
+
+  .cvItem {
+    padding: 10px;
+    color: #e6a646;
+  }
+
+  /* Animation */
+
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0)
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+    }
+  }
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0)
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+    }
+  }
+
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+  }
+
+  .animatedFadeInUp {
+    opacity: 0
+  }
+
+  .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+  }
+
+
+  .display-menu {
+    background: transparent;
+    width: 46px;
+    height: 33px;
+    padding: 15px;
+    margin-left: 83%;
+    border-radius: 10px;
+
+  }
+
+  a {
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+  }
+}
+
+/* Tablettes en mode portrait */
+@media screen and (max-width: 991px) {
+  /* Styles CSS pour les tablettes en mode portrait */
+}
+
+
+
+/* responsive desktop */
+@media screen and (min-width:1200px) {
+  .body {
+    background-image: url("./assets/bg-body.jpg");
+  }
+
+
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .route-app {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    height: 835px;
+    box-shadow: 3px 2px 13px rgb(61, 60, 60, 0.4);
+    width: 400px;
+    margin: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+    margin: -40px;
+    box-shadow: 3px 2px 13px rgb(61, 60, 60, 0.4);
+    border-radius: 15px;
+  }
+
+  .infos {
+    /* background: wheat; */
+    width: 296px;
+    margin: 102px 0px 0px 67px;
+  }
+
+  .bg-header {
+    background: white;
+    width: 970px;
+    height: 1250px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    margin: 15px;
+    padding: 15px;
+    font-weight: 500;
+  }
+
+  .post {
+    color: rgba(174, 171, 171, 0.834);
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .infos02 {
+    background: #FFF5E4;
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+    border-radius: 15px;
+  }
+
+  .box-display {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px 30px;
+  }
+
+  .icons {
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+  }
+
+  .boxTab {
+    background: #f6d69036;
+    width: 300px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 25px 20px;
+    text-align: initial;
+  }
+
+  .text-desc {
+    font-family: 'Now Bold', sans-serif;
+    font-size: 14px;
+  }
+
+  .sub-title {
+    font-size: 13px;
+    color: gray;
+    font-family: 'Now Bold', sans-serif;
+  }
+
+  .infos03 {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .iconsTab {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+  }
+
+  .boxFlex {
+    padding: 0px 20px;
+  }
+
+  .iconsItem {
+    display: flex;
+  }
+
+  .pdf-doc {
+    margin: 10px auto;
+    font-family: 'Now Bold', sans-serif;
+  }
+
+  .cvItem {
+    padding: 10px;
+    color: #e6a646;
+  }
+
+  /* Animation */
+
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0)
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+    }
+  }
+
+  @-webkit-keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 40px, 0)
+    }
+
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+    }
+  }
+
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+  }
+
+  .animatedFadeInUp {
+    opacity: 0
+  }
+
+  .fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+  }
+
+
+  .display-menu {
+    background: white;
+    width: 400px;
+    height: 15px;
+    padding: 15px;
+    margin-left: 56%;
+    border-radius: 10px;
+  }
+
+  a {
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
   }
 }

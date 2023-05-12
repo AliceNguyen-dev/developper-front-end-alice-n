@@ -1,0 +1,63 @@
+.menuVisible {
+    visibility: visible;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+    margin-right: 5%;
+}
+
+.burgerVisible {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 620px) {
+
+    /* For mobile phones: */
+    .burgerVisible {
+        visibility: visible;
+    }
+
+    .menuVisible {
+        visibility: hidden;
+    }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    right: 32px;
+    top: 26px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #f5b971;
+    padding: 7.5em 6.5em 0;
+    font-size: 20px;
+}
+
+.menu-items {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px auto;
+}
