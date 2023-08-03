@@ -1,49 +1,56 @@
-import React from "react";
-import { Link } from "react-router-dom"
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { slide as Menu } from "react-burger-menu";
-
-import './Navbar.css'
-
+import "./Navbar.css";
 
 const Navbar = () => {
+    const [isBurgerMenuOpen, setBurgerMenuOpen] = useState(false);
+
+    const handleBurgerMenuToggle = () => {
+        setBurgerMenuOpen(!isBurgerMenuOpen);
+    };
+
+    const handleMenuItemClick = () => {
+        setBurgerMenuOpen(false);
+    };
+
     return (
-
         <div className="display-menu">
-
             <div className="menuVisible">
-                <Link to="/" className="NavItems menu">
+                <Link to="/" className="NavItems menu" onClick={handleMenuItemClick}>
                     Accueil
                 </Link>
-                <Link to="/resume" className="NavItems menu">
+                <Link to="/resume" className="NavItems menu" onClick={handleMenuItemClick}>
                     Résume
                 </Link>
-                <Link to="/portfolio" className="NavItems menu">
+                <Link to="/portfolio" className="NavItems menu" onClick={handleMenuItemClick}>
                     Portfolio
                 </Link>
-                <Link to="/contact" className="NavItems menu">
+                <Link to="/contact" className="NavItems menu" onClick={handleMenuItemClick}>
                     Contact
                 </Link>
             </div>
             <div className="burgerVisible">
-                <Menu>
-                    <Link to="/" className="menu-items">
+                <div className="burger-button" onClick={handleBurgerMenuToggle}>
+                    ☰ {/* Add your burger menu icon here */}
+                </div>
+                <Menu isOpen={isBurgerMenuOpen} onClose={handleBurgerMenuToggle}>
+                    <Link to="/" className="menu-items" onClick={handleMenuItemClick}>
                         Accueil
                     </Link>
-                    <Link to="/resume" className="menu-items">
+                    <Link to="/resume" className="menu-items" onClick={handleMenuItemClick}>
                         Résume
                     </Link>
-                    <Link to="/portfolio" className="menu-items">
+                    <Link to="/portfolio" className="menu-items" onClick={handleMenuItemClick}>
                         Portfolio
                     </Link>
-                    <Link to="/contact" className="menu-items">
+                    <Link to="/contact" className="menu-items" onClick={handleMenuItemClick}>
                         Contact
                     </Link>
                 </Menu>
             </div>
-
         </div>
+    );
+};
 
-    )
-}
-
-export default Navbar
+export default Navbar;

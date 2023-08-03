@@ -1,105 +1,122 @@
-import React from 'react'
-// import { useState } from 'react';
-// import axios from 'axios';
-import './Contact.css'
-
-import Girl from '../assets/bf-footer.png'
+import { useRef } from 'react';
+import './Contact.css';
+import Girl from '../assets/bf-footer.png';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+    const form = useRef()
 
-    // const [name, setName] = useState('');
-    // const [mobile, setMobile] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [message, setMessage] = useState('');
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    // const handleSubmit = () => {
-    //     if (name.length === 0) {
-    //         alert("Veuillez remplir votre nom complet");
-    //     }
-    //     else if (mobile.length === 0) {
-    //         alert("Veuillez remplir votre numéro mobile");
-    //     }
-    //     else if (email.length === 0) {
-    //         alert("Veuillez remplir votre email");
-    //     }
-    //     else if (message.length === 0) {
-    //         alert("Veuillez remplir votre message");
-    //     }
-    //     else {
-    //         const url = 'http://localhost/Portfolio/portfolio_n_alice/formsubmit.php';
-    //         let fData = new FormData();
-    //         fData.append('name', name);
-    //         fData.append('mobile', mobile);
-    //         fData.append('email', email);
-    //         fData.append('message', message);
-    //         axios.post(url, fData).then(response => alert(response.data)).catch(error => alert(error));
-    //     }
-    // }
-
-
+        emailjs.sendForm('service_oqumer1', 'template_e91i449', form.current, 'gtf8A5-3P1joZjbMG')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset()
+    };
 
     return (
         <div className="contact-main bg-header">
             <div className="contactApp">
-                <h2 className='title-page'>Contact</h2>
+                <h2 className="title-page">Contact</h2>
             </div>
 
-            <div className="coord">
-
-                <div className="sect1">
-                    <div className="blocFlex">
-                        <p className="sub-title">Mobile</p>
-                        <p className="text-resu">06 05 45 96 95</p>
+            <div className="mesApp">
+                <form ref={form} onSubmit={sendEmail} className=" formApp --form-control --card --flex-center --dir-column">
+                    <div className='form-outline mb-4 tab-info'>
+                        <input type="text" placeholder='Full Name' name="user_name" required />
                     </div>
 
-                </div>
-
-                <div className="sect2">
-                    <div className="blocFlex">
-                        <p className="sub-title">Localisation</p>
-                        <p className="text-resu">A Proximité du Parc Disneyland Paris ( RER A )</p>
+                    <div className='form-outline mb-4 tab-info'>
+                        <input type="text" placeholder='N° Mobile' name="user_mobile" required />
                     </div>
 
-                </div>
-
-            </div>
-
-            <div className="messApp">
-
-                <form className='formApp'>
-                    <div className="form-outline mb-4 tab-info">
-                        <label className="form-label" for="name">Nom</label>
-                        <input type="text" className="form-control form-control-lg" />
-                    </div>
-                    <div className="form-outline mb-4 tab-info">
-                        <label className="form-label" for="mobile">Mobile</label>
-                        <input type="text" className="form-control form-control-lg" />
-                    </div>
-                    <div className="form-outline mb-4 tab-info">
-                        <label className="form-label" for="email">Email</label>
-                        <input type="email" className="form-control form-control-lg" />
-                    </div>
-                    <div className="form-outline mb-4 tab-info">
-                        <label className="form-label" for="message">Message</label>
-                        <input type="text-area" className="form-control form-control-lg" />
+                    <div className='form-outline mb-4 tab-info'>
+                        <input type="text" placeholder="Nom de l'Entreprise" name="name_entreprise" required />
                     </div>
 
-                    {/* <div className="d-flex justify-content-center">
-                        <input type="button" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body btn-contact" />
-                    </div> */}
+                    <div className='form-outline mb-4 tab-info'>
+                        <input type="email" placeholder='Email' name="user_email" required />
+                    </div>
+
+                    <div className='form-outline mb-4 tab-info'>
+                        <input type="text" placeholder='Sujet' name="subject" required />
+                    </div>
+
+                    <div className='form-outline mb-4 tab-info'>
+                        <textarea placeholder='Message' name="message" col="30" row="10" required></textarea>
+                    </div>
+
+                    <div className="d-flex justify-content-center">
+                        <button type="submit" className=" --btn --btn-primary btn btn-success btn-block btn-lg gradient-custom-4 text-body btn-contact">
+                            Envoyer le message
+                        </button>
+                    </div>
 
                 </form>
-
-
             </div>
+
+
+            {/* <div className="messApp">
+                <form className="formApp" onSubmit={handleSubmit}>
+                    <div className="form-outline mb-4 tab-info">
+                        <label className="form-label" htmlFor="name">
+                            Nom
+                        </label>
+                        <input
+                            type="text"
+                            className="form-control form-control-lg"
+                            value={name}
+                            onChange={handleNameChange}
+                        />
+                    </div>
+                    <div className="form-outline mb-4 tab-info">
+                        <label className="form-label" htmlFor="mobile">
+                            Mobile
+                        </label>
+                        <input
+                            type="text"
+                            className="form-control form-control-lg"
+                            value={mobile}
+                            onChange={handleMobileChange}
+                        />
+                    </div>
+                    <div className="form-outline mb-4 tab-info">
+                        <label className="form-label" htmlFor="email">
+                            Email
+                        </label>
+                        <input
+                            type="email"
+                            className="form-control form-control-lg"
+                            value={email}
+                            onChange={handleEmailChange}
+                        />
+                    </div>
+                    <div className="form-outline mb-4 tab-info">
+                        <label className="form-label" htmlFor="message">
+                            Message
+                        </label>
+                        <textarea
+                            className="form-control form-control-lg"
+                            value={message}
+                            onChange={handleMessageChange}
+                        />
+                    </div>
+
+                    <div className="d-flex justify-content-center">
+                        <button type="submit" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body btn-contact">
+                            Envoyer le message
+                        </button>
+                    </div>
+                </form>
+            </div> */}
 
             <div className="space-bas">
-                <img className='imgG' src={Girl} alt="girl" />
+                <img className="imgG" src={Girl} alt="girl" />
             </div>
-
-
-
-
         </div>
     );
 }
