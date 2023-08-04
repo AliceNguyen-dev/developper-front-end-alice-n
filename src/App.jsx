@@ -76,9 +76,9 @@ function App() {
 
           </div>
 
-          <div className="pdf-doc">
-            <a className="cvItem" href="./assets/Alice_N_CV.pdf" download={"./assets/Alice_N_CV.pdf"}>Téléchargez le CV</a>
-          </div>
+          {/* <div class="pdf-doc">
+            <a class="cvItem" href="./assets/Alice_N_CV.pdf" download="Alice_N_CV.pdf">Téléchargez le CV</a>
+          </div> */}
 
 
         </div>
