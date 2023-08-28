@@ -89,6 +89,7 @@
         color: white;
         font-size: 17px;
         font-family: 'Now Bold', sans-serif;
+        text-align: center;
     }
 
     .form-label {
@@ -170,6 +171,7 @@
         grid-template-columns: auto auto;
         padding: 20px;
         gap: 2px;
+        justify-content: center;
     }
 
     input[type="text" i] {
@@ -222,9 +224,17 @@
         margin: 10px;
         padding: 10px;
     }
+
+    textarea{
+        width: 515px;
+        height: 190px;
+        border-radius: 15px;
+    }
 }
 
 
 .mesApp {
     background-color: #ffc09836;
+    text-align: center;
 }
+

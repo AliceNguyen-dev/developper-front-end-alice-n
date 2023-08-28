@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { React, useRef } from 'react';
 import './Contact.css';
 import Girl from '../assets/bf-footer.png';
 import emailjs from '@emailjs/browser';
@@ -59,60 +59,6 @@ function Contact() {
                 </form>
             </div>
 
-
-            {/* <div className="messApp">
-                <form className="formApp" onSubmit={handleSubmit}>
-                    <div className="form-outline mb-4 tab-info">
-                        <label className="form-label" htmlFor="name">
-                            Nom
-                        </label>
-                        <input
-                            type="text"
-                            className="form-control form-control-lg"
-                            value={name}
-                            onChange={handleNameChange}
-                        />
-                    </div>
-                    <div className="form-outline mb-4 tab-info">
-                        <label className="form-label" htmlFor="mobile">
-                            Mobile
-                        </label>
-                        <input
-                            type="text"
-                            className="form-control form-control-lg"
-                            value={mobile}
-                            onChange={handleMobileChange}
-                        />
-                    </div>
-                    <div className="form-outline mb-4 tab-info">
-                        <label className="form-label" htmlFor="email">
-                            Email
-                        </label>
-                        <input
-                            type="email"
-                            className="form-control form-control-lg"
-                            value={email}
-                            onChange={handleEmailChange}
-                        />
-                    </div>
-                    <div className="form-outline mb-4 tab-info">
-                        <label className="form-label" htmlFor="message">
-                            Message
-                        </label>
-                        <textarea
-                            className="form-control form-control-lg"
-                            value={message}
-                            onChange={handleMessageChange}
-                        />
-                    </div>
-
-                    <div className="d-flex justify-content-center">
-                        <button type="submit" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body btn-contact">
-                            Envoyer le message
-                        </button>
-                    </div>
-                </form>
-            </div> */}
 
             <div className="space-bas">
                 <img className="imgG" src={Girl} alt="girl" />
