@@ -25,7 +25,7 @@ function Resume() {
                     </div>
                     <div className="blocFlex">
                         <p className="sub-title">Développeur Full Stack - Cloud Campus</p>
-                        <p className="text-resu">2 ans</p>
+                        <p className="text-resu">2 ans - Diplômée Bac +4</p>
                     </div>
                     <div className="blocFlex">
                         <p className="sub-title">Développeur Web et Web Mobile - Social Builder</p>
