@@ -43,7 +43,7 @@ function Resume() {
                         <h2 className='title-page titleTwo'><img src={Icon8} alt="" className="ic-resume" /> Expériences</h2>
                     </div>
                     <div className="blocFlex">
-                        <p className="sub-title">Cashback</p>
+                        <p className="sub-title">Cashback - Datintek</p>
                         <p className="text-resu">3 mois - Développeur Front-End </p>
                     </div>
                     <div className="blocFlex">
