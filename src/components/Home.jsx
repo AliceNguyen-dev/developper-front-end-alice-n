@@ -53,7 +53,7 @@ function Home() {
 
             <div className="desc-about">
                 <p className="desc-infos fadeIn">
-                Diplômée récemment d'un Bac+4 en Développement Full Stack, j'ai débuté ma formation par un programme intensif de trois mois chez Social Builder, spécialisé en Développement Web et Web Mobile. Cette formation a été complétée par un stage d'un mois au sein d'une entreprise de luxe dans le secteur du tourisme et de l'hôtellerie, où j'ai pu mettre en pratique mes connaissances nouvellement acquises.</p>
+                <span className="t-gras" >Diplômée récemment d'un Bac+4 en Développement Full Stack</span>, j'ai débuté ma formation par un programme intensif de trois mois chez Social Builder, spécialisé en Développement Web et Web Mobile. Cette formation a été complétée par un stage d'un mois au sein d'une entreprise de luxe dans le secteur du tourisme et de l'hôtellerie, où j'ai pu mettre en pratique mes connaissances nouvellement acquises.</p>
                 <p className="desc-infos fadeIn">
                 Cette première expérience m'a permis d'élargir mes compétences et a constitué un tremplin pour poursuivre ma formation en alternance chez Cloud Campus en tant que Développeur Full Stack, sur une période de deux ans. Durant cette alternance, j'ai passé une année au sein d'une Agence Web, travaillant sur divers projets au sein d'une équipe collaborative, puis une autre année en tant que Développeur Front-End dans une entreprise spécialisée dans la gestion des ressources humaines en entreprise. Ce dernier projet, réalisé en autonomie, a été particulièrement enrichissant et a contribué à l'obtention de mon diplôme de Développeur Full Stack.</p>
                 <p className="desc-infos fadeIn">

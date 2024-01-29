@@ -7,7 +7,7 @@
   .bg-header {
     background: white;
     width: 384px;
-    height: 2790px;
+    height: 3400px;
     border-radius: 15px;
     padding: 10px;
     margin: 20px;
@@ -309,7 +309,7 @@
   .bg-header {
     background: white;
     width: 970px;
-    height: 1300px;
+    height: 1605px;
     border-radius: 15px;
     padding: 10px;
     margin: 20px;
@@ -443,7 +443,7 @@
 
   .display-menu {
     background: white;
-    width: 400px;
+    width: 445px;
     height: 15px;
     padding: 15px;
     margin-left: 56%;

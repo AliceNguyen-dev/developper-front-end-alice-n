@@ -200,8 +200,29 @@ function Portfolio() {
             </div>
 
 
+            <div className="projet-expo">
+                <h2 className='title-page titleTwo'>Mes Missions</h2>
+            </div>
+            <div class="ag-desc_box">
+                    <div class="ag-courses_item">
+                        <p className="desc-box">Développement et implémentation d'interfaces utilisateur réactives et interactives en HTML5, CSS3 et JavaScript.</p>
+                        <p className="desc-box">Garantir une compatibilité multi-navigateurs optimale sur tous les appareils.</p>
+                        <p className="desc-box">Optimisation des performances des applications web en identifiant et en résolvant les problèmes.</p>
+                        <p className="desc-box">Utilisation de frameworks Front End comme React, Angular ou Vue.js.</p>
+                        <p className="desc-box">Mise en œuvre de méthodologies de développement agile.</p>
+                        <p className="desc-box">Tests unitaires et fonctionnels pour assurer la qualité et la stabilité du code Front End.</p>
+                        <p className="desc-box">Respecter les meilleures pratiques en matière de conception UX/UI.</p>
+                        <p className="desc-box">Intégration de fonctionnalités côté client avec des API REST ou GraphQL.</p>
+                    </div>
+
+            </div>
+
+
+            
 
         </div>
+
+        
 
 
 

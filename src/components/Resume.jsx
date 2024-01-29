@@ -74,7 +74,7 @@ function Resume() {
                     <div style={mainDiv}>
 
                         <div className="tabItem">
-                            <p className="sbt-sk">HTML5 / CSS3</p>
+                            <p className="sbt-sk">HTML5 / CSS3 / SASS</p>
                             <ProgressBar className="bgItem1" bgColor="#F5B971" completed={100} animateOnRender={false} isLabelVisible={false} />
                         </div>
 
@@ -89,17 +89,22 @@ function Resume() {
                         </div>
 
                         <div className="tabItem">
-                            <p className="sbt-sk">Angular</p>
-                            <ProgressBar className="bgItem4" completed={30} bgColor="#F5B971" isLabelVisible={false} />
+                            <p className="sbt-sk">AngularJS</p>
+                            <ProgressBar className="bgItem4" completed={80} bgColor="#F5B971" isLabelVisible={false} />
                         </div>
 
                         <div className="tabItem">
-                            <p className="sbt-sk">Javascript / VueJs3 / ReactJs / Typescript</p>
+                            <p className="sbt-sk">Javascript / VueJs3 / ReactJs / Typescript / VanillaJs</p>
                             <ProgressBar className="bgItem5" bgColor="#F5B971" completed={90} animateOnRender={true} isLabelVisible={false} />
                         </div>
 
                         <div className="tabItem">
                             <p className="sbt-sk">Bootstrap</p>
+                            <ProgressBar className="bgItem5" completed={80} bgColor="#F5B971" animateOnRender={true} isLabelVisible={false} />
+                        </div>
+
+                        <div className="tabItem">
+                            <p className="sbt-sk">TAILWINDCSS</p>
                             <ProgressBar className="bgItem5" completed={80} bgColor="#F5B971" animateOnRender={true} isLabelVisible={false} />
                         </div>
 
@@ -118,6 +123,11 @@ function Resume() {
                         <div className="tabItem">
                             <p className="sbt-sk">MySQL</p>
                             <ProgressBar className="bgItem5" completed={80} bgColor="#F5B971" animateOnRender={true} isLabelVisible={false} />
+                        </div>
+
+                        <div className="tabItem">
+                            <p className="sbt-sk">NodeJS</p>
+                            <ProgressBar className="bgItem5" completed={90} bgColor="#F5B971" animateOnRender={true} isLabelVisible={false} />
                         </div>
 
                         <div className="tabItem">
@@ -161,6 +171,9 @@ function Resume() {
                         <div className="ticket"><p className="quat">Teams</p></div>
                         <div className="ticket"><p className="quat">Github</p></div>
                         <div className="ticket"><p className="quat">Veille Informatique</p></div>
+                        <div className="ticket"><p className="quat">IA Infos</p></div>
+                        <div className="ticket"><p className="quat">JWT</p></div>
+                        <div className="ticket"><p className="quat">Trello</p></div>
                     </div>
                 </div>
 

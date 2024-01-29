@@ -418,10 +418,16 @@
     }
 
     .carousel {
-        padding: 2rem;
         color: black;
         height: 45px;
-        width: 83%;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .t-gras{
+        color: #365486;
+        font-weight: 700;
+        font-size: 15px;
     }
 
     .box {
