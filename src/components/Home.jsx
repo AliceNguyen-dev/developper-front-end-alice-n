@@ -9,6 +9,7 @@ import Beeflex from "../assets/beeflex.jpg";
 import Take from "../assets/take.jpg";
 import TonLogo from "../assets/async-avatar.png";
 import Coif from "../assets/3ci.jpg"
+import Gold from "../assets/LOGO_GC_Noir.png";
 
 function Home() {
 
@@ -123,6 +124,9 @@ function Home() {
                     </div>
                     <div className="box">
                         <img className="img-work" src={Coif} alt="" />
+                    </div>
+                    <div className="box">
+                        <img className="img-work" src={Gold} alt="" />
                     </div>
                     {/* <div className="box">
                         <img src={} alt="" />
