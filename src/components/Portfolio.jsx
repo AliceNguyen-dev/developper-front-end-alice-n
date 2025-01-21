@@ -177,7 +177,6 @@ function Portfolio({ data }) {
         {
           structure: 'Datintek',
           missions: [
-            { name: '★ Réalisation d un onboarding'},
                 { name: '★ Suivi du cahier des charges '},
                 { name: '★ Modifications et amélioration sur certaines pages ( différentes applications )'},
                 { name: '★ Réalisation des maquettes sur Figma '},
