@@ -14,7 +14,9 @@ import IconsL from "./assets/iconsL.png";
 import IconsP from "./assets/iconsP.png";
 import IconsLo from "./assets/iconsLo.png";
 import IconsE from "./assets/iconsE.png";
-import IconsT from "./assets/iconsT.png";
+// import IconsT from "./assets/iconsT.png";
+import IconG from "./assets/iconG.png";
+import IconL from "./assets/iconL.png";
 
 // import "./Responsive.scss"
 
@@ -45,20 +47,38 @@ function App() {
             <div className="boxTab">
 
 
-              <div className="boxFlex">
+              {/* <div className="boxFlex">
                 <div className="iconsItem"><img src={IconsT} alt="" className="iconsTab" />
                   <div className="item-desc">
                     <span className="sub-title" >Mobile</span>
-                    <p className="text-desc">06 05 45 96 95</p>
+                    <p className="text-desc">0000000000</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="boxFlex">
                 <div className="iconsItem"><img src={IconsLo} alt="" className="iconsTab" />
                   <div className="item-desc">
                     <span className="sub-title" >Localisation</span>
                     <p className="text-desc">A Proximité du Parc Disneyland Paris ( RER A )</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="boxFlex">
+                <div className="iconsItem"><img src={IconG} alt="" className="iconsTab" />
+                  <div className="item-desc">
+                    <span className="sub-title" >Github</span>
+                    <p className="text-desc"><a href="https://github.com/AliceNguyen-dev">Github Alice</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="boxFlex">
+                <div className="iconsItem"><img src={IconL} alt="" className="iconsTab" />
+                  <div className="item-desc">
+                    <span className="sub-title" >Linkedin</span>
+                    <p className="text-desc"><a href="https://www.linkedin.com/in/alice-nguyen-asspadev/">Github Alice</a></p>
                   </div>
                 </div>
               </div>

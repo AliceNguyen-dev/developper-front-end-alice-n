@@ -1,5 +1,9 @@
 /* responsive mobile */
 @media screen and (max-width:767px) {
+    .p-h-text{
+        font-style: italic;
+        color: #A6CDC6;
+    }
     .desc-work {
         display: grid;
         grid-template-columns: auto;
@@ -229,12 +233,20 @@
 /* Tablettes en mode portrait */
 @media screen and (max-width: 991px) {
     /* Styles CSS pour les tablettes en mode portrait */
+    .p-h-text{
+        font-style: italic;
+        color: #A6CDC6;
+    }
 }
 
 
 
 /* responsive desktop */
 @media screen and (min-width:1200px) {
+    .p-h-text{
+        font-style: italic;
+        color: #A6CDC6;
+    }
 
     .desc-about {
         width: 87%;

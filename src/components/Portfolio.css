@@ -81,10 +81,71 @@
 
 /* responsive desktop */
 @media screen and (min-width:1200px) {
-    .ag-format-container {
+
+    /* Tableau missions */
+    .grid-container {
+        /* display: grid; */
+        grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
+        gap: 10px; /* Espace entre les colonnes et les lignes */
+        margin: 20px;
+      }
+      
+      table {
         width: 100%;
-        margin: 0 auto;
-    }
+        border-collapse: collapse;
+      }
+      
+      th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      th {
+        background-color: #FDDBBB;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        border: 1px solid #dddddd;
+        text-align: left; /* Aligne le texte à gauche */
+        padding: 8px;
+      }
+      
+      /* Pour les listes à puces dans la colonne "Missions" */
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .accordion-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+      
+      .sublist {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+      }
+      
+      .sublist.active {
+        max-height: 100vh; /* Ajustez la hauteur selon vos besoins */
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
 
     .ag-courses_box {
         display: -webkit-box;
