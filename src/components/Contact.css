@@ -195,6 +195,8 @@
         width: 500px;
     }
 
+    
+
     .btn-contact {
         width: 220px;
         height: 55px;
@@ -229,10 +231,16 @@
         width: 515px;
         height: 190px;
         border-radius: 15px;
+        font-size: 12px;
+        font-family: cursive;
+        padding: 10px;
+        color: #0A3981;
     }
 }
 
-
+.--btn-primary{
+    cursor: pointer;
+}
 .mesApp {
     background-color: #ffc09836;
     text-align: center;
