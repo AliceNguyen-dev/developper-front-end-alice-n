@@ -381,16 +381,16 @@ function Portfolio({ data }) {
                     <div className="grid-container">
                         <table>
                             <thead>
-                            <tr>
+                            <tr className="items-name-list">
                                 <th>Structures</th>
                                 <th>Missions</th>
-                                <th>Outils Info</th>
                                 <th>Durée</th>
+                                <th>Outils Info</th>
                             </tr>
                             </thead>
                             <tbody>
                                 {dataTable.map((mission, structureIndex) => (
-                                    <tr key={structureIndex}>
+                                    <tr key={structureIndex} className="items-list">
                                     <td>{mission.structure}</td>
                                     <td>
                                         <Accordion>

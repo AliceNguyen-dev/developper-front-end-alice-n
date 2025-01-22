@@ -45,7 +45,11 @@ function Contact() {
 
   return (
     <div className="contact-main bg-header">
-      {/* ... the rest of your code ... */}
+      
+      <div className="text-head">
+        <p className="title-contact">Contactez Moi</p>
+        <p className="para-contact">Besoin d'un développeur full-stack pour donner vie à vos idées ? Je suis là pour vous aider à créer des applications web performantes et innovantes.</p>
+      </div>
 
       <div className="mesApp">
         <form onSubmit={handleSubmit} className="emailForm formApp --form-control --card --flex-center --dir-column">

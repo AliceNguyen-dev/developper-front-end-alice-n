@@ -1,5 +1,25 @@
 /* responsive mobile */
 @media screen and (max-width:767px) {
+
+    .para-contact{
+        font-size: 17px;
+    text-align: center;
+    color: #281e44;
+    }
+
+    .title-contact{
+        font-size: 20px;
+        text-align: center;
+        background-color: #ffc09836;
+        width: 50%;
+        padding: 10px;
+        margin: 10px auto;
+        font-family: "Roboto Flex", serif;
+        font-optical-sizing: auto;
+    }
+
+
+
     .sect1 {
         animation: fadeInLeft 1s ease-in-out;
     }
@@ -116,6 +136,25 @@
 
 /* responsive desktop */
 @media screen and (min-width:1200px) {
+
+    .para-contact{
+        font-size: 17px;
+    text-align: center;
+    color: #281e44;
+    }
+
+    .title-contact{
+        font-size: 20px;
+        text-align: center;
+        background-color: #ffc09836;
+        width: 50%;
+        padding: 10px;
+        margin: 10px auto;
+        font-family: "Roboto Flex", serif;
+        font-optical-sizing: auto;
+    }
+
+
     .sect1 {
         animation: fadeInLeft 1s ease-in-out;
     }

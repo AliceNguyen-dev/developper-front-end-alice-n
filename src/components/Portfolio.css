@@ -23,6 +23,31 @@
 
 /* responsive mobile */
 @media screen and (max-width:767px) {
+    table {
+        display: flex; /* Use flexbox for example */
+        flex-wrap: wrap; /* Allow cells to wrap on mobile */
+      }
+      
+      th, td {
+        flex: 1; /* Make cells share available space equally */
+      }
+      .items-list{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+      }
+
+      .items-name-list{
+        background-color: #FDDBBB;
+      }
+    
+      th, td {
+        padding: 8px;
+      }
+    
+      .accordion-button {
+        width: 100%;
+      }
     .ag-format-container {
         width: 96%;
     }
@@ -75,23 +100,32 @@
         width: 100%;
         height: 200px;
     }
+    table {
+        display: flex; /* Use flexbox for example */
+        flex-wrap: wrap; /* Allow cells to wrap on mobile */
+      }
+      
+      th, td {
+        flex: 1; /* Make cells share available space equally */
+      }
 }
 
 
 
 /* responsive desktop */
 @media screen and (min-width:1200px) {
+    
 
     /* Tableau missions */
     .grid-container {
-        /* display: grid; */
+        display: grid;
         grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
         gap: 10px; /* Espace entre les colonnes et les lignes */
         margin: 20px;
       }
       
       table {
-        width: 100%;
+        width: 235%;
         border-collapse: collapse;
       }
       
@@ -105,10 +139,13 @@
         background-color: #FDDBBB;
       }
 
-      table {
-        border-collapse: collapse;
+      .items-list{
+        /* display: flex;
+        flex-direction: row; */
         width: 100%;
+      
       }
+
       
       th, td {
         border: 1px solid #dddddd;
