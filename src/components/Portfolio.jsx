@@ -177,12 +177,12 @@ function Portfolio({ data }) {
         {
           structure: 'Datintek',
           missions: [
-                { name: '★ Suivi du cahier des charges '},
-                { name: '★ Modifications et amélioration sur certaines pages ( différentes applications )'},
-                { name: '★ Réalisation des maquettes sur Figma '},
-                { name: "★ Amélioration UI de l'application "},
-                { name: '★ Responsive Mobile '},
-                { name: "★ API Rest"},
+                { name: 'Suivi du cahier des charges '},
+                { name: 'Modifications et amélioration sur certaines pages ( différentes applications )'},
+                { name: 'Réalisation des maquettes sur Figma '},
+                { name: "Amélioration UI de l'application "},
+                { name: 'Responsive Mobile '},
+                { name: "API Rest"},
           ],
           outils: 'Javascript / AngularJs / Typescript / API Rest',
           duree: '3 mois', 
@@ -191,13 +191,13 @@ function Portfolio({ data }) {
         {
            structure: 'Beemyflex',
             missions: [
-                { name: '★ Réalisation d un onboarding'},
-                { name: '★ Suivi du cahier des charges '},
-                { name: '★ Modifications et amélioration sur certaines pages de ( dashboard )'},
-                { name: '★ Réalisation des maquettes sur Figma '},
-                { name: "★ Amélioration UI de l'application "},
-                { name: '★ Responsive Mobile '},
-                { name: "★ Réalisation d'un projet sur l'empreinte carbone ( autonomie totale )"},
+                { name: 'Réalisation d un onboarding'},
+                { name: 'Suivi du cahier des charges '},
+                { name: 'Modifications et amélioration sur certaines pages de ( dashboard )'},
+                { name: 'Réalisation des maquettes sur Figma '},
+                { name: "Amélioration UI de l'application "},
+                { name: 'Responsive Mobile '},
+                { name: "Réalisation d'un projet sur l'empreinte carbone ( autonomie totale )"},
             ],
             outils: 'ReactJs / Typescript / Azure Devops / Figma / API Rest',
             duree: '1 an',
@@ -206,12 +206,12 @@ function Portfolio({ data }) {
         {
         structure: 'Agence Web MBA Corporate',
         missions: [
-            { name: '★ Suivi des cahiers des charges'},
-            { name: '★ Réalisation des différentes maquettes '},
-            { name: "★ Réalisation d'un projet à moitié en autonomie ( client ) "},
-            { name: "★ Gestion de base de données"},
-            { name: '★ Amélioration de certaines pages sur certaines applications '},
-            { name: "★ Responsive mobile "},
+            { name: 'Suivi des cahiers des charges'},
+            { name: 'Réalisation des différentes maquettes '},
+            { name: "Réalisation d'un projet à moitié en autonomie ( client ) "},
+            { name: "Gestion de base de données"},
+            { name: 'Amélioration de certaines pages sur certaines applications '},
+            { name: "Responsive mobile "},
         ],
         outils: 'Wordpress / SEO / Javascript / Typescript / ReactJs / Base de données ( PHPMyAdmin ) / NodeJs, Figma',
         duree: '1 an',
@@ -222,11 +222,11 @@ function Portfolio({ data }) {
         {
             structure: 'Escapade Française',
             missions: [
-                { name: "★ Modification sur certaines pages "},
-                { name: '★ Responsive Mobile '},
-                { name: "★ Ajout des produits sur la page Articles "},
-                { name: '★ Page dynamique avec slide'},
-                { name: "★ Gestion des produits en base de données "},
+                { name: "Modification sur certaines pages "},
+                { name: 'Responsive Mobile '},
+                { name: "Ajout des produits sur la page Articles "},
+                { name: 'Page dynamique avec slide'},
+                { name: "Gestion des produits en base de données "},
             ],
             outils: 'Javascript / AngularJs / Typescript / API Rest',
             duree: '1 mois',
@@ -240,7 +240,8 @@ function Portfolio({ data }) {
 
           ];
 
-
+// eslint-disable-next-line no-unused-vars
+const unusedVariable = 'This variable is not used'; 
 
     
     return (
@@ -405,15 +406,15 @@ function Portfolio({ data }) {
                                             <ul>
                                             {mission.missions.map((project, missionIndex) => (
                                                 <li key={project.name}>
-                                                <button className="accordion-button">{project.name}</button>
+                                                <p className="accordion-button">{project.name}</p>
                                                 {activeMission &&
                                                     activeMission.structureIndex === structureIndex &&
                                                     activeMission.missionIndex === missionIndex && (
-                                                    <ul className="sublist">
+                                                    <p className="sublist">
                                                     {project.tasks.map(task => (
                                                         <li key={task}>{task}</li>
                                                     ))}
-                                                    </ul>
+                                                    </p>
                                                 )}
                                                 </li>
                                             ))}
