@@ -253,7 +253,7 @@ const unusedVariable = 'This variable is not used';
             <div class="ag-format-container">
                 <div class="ag-courses_box">
                     <div class="ag-courses_item">
-                        <a href="https://www.escapadefrancaise.com/" target="_blank" rel="noopener noreferrer" class="ag-courses-item_link">
+                        <a href="https://www.facebook.com/EscapadeFrancaise/" target="_blank" rel="noopener noreferrer" class="ag-courses-item_link">
                             <div class="ag-courses-item_bg"></div>
 
                             <div class="ag-courses-item_title">
