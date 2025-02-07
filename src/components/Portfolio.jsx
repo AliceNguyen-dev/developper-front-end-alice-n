@@ -24,14 +24,16 @@ import './Portfolio.css';
 // import './MissionList'
 
 
-
+// Projets
 import uneSecond from "../assets/1secdumondemoderne.png";
 import Escapade from "../assets/escapade-francaise.png";
 import beeflex from "../assets/beemyflex.png";
 import phim from "../assets/phim-viet.png";
 import cpm from "../assets/cpm-paris.png";
-import Transfert from "../assets/transfert-en-autocar.png"
+import Transfert from "../assets/transfert-en-autocar.png";
+import Davilone from "../assets/davilone-project.png";
 
+// Maquettes
 import Maquette1 from "../assets/maquette01.png"
 import Maquette2 from "../assets/maquette02.png"
 import Maquette3 from "../assets/maquette03.png"
@@ -314,6 +316,17 @@ const unusedVariable = 'This variable is not used';
 
                             <div class="ag-courses-item_title">
                                 <img src={phim} alt="" className="img-port" />
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="ag-courses_item">
+                        <a href="https://davilone-papillon.vercel.app/" target="_blank" rel="noopener noreferrer" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+
+                            <div class="ag-courses-item_title">
+                                <img src={Davilone} alt="" className="img-port" />
                             </div>
                         </a>
                     </div>
