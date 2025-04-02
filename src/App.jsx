@@ -8,7 +8,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 
-import Avatar03 from "./assets/avatar03.png";
+import Avatar03 from "./assets/avatar019.png";
 import IconsG from "./assets/iconsG.png";
 import IconsL from "./assets/iconsL.png";
 import IconsP from "./assets/iconsP.png";
