@@ -32,7 +32,7 @@ const Navbar = () => {
             </div>
             <div className="burgerVisible">
                 <div className="burger-button" onClick={handleBurgerMenuToggle}>
-                    ☰ {/* Add your burger menu icon here */}
+                    
                 </div>
                 <Menu isOpen={isBurgerMenuOpen} onClose={handleBurgerMenuToggle}>
                     <Link to="/" className="menu-items" onClick={handleMenuItemClick}>

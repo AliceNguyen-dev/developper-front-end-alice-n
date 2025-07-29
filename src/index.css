@@ -128,16 +128,17 @@
   }
 
   .menu {
-    color: #4E709D;
+    color: #D25D5D;
     font-size: 17px;
     margin: 10px;
     transition: 0.3s;
   }
 
   .menu:hover {
-    background: linear-gradient(rgba(255, 222, 89, 0.643) 0%, rgba(224, 143, 98, 0.63) 33.333%, rgba(235, 157, 215, 0.733) 66.667%, rgba(255, 145, 77, 0.733) 100%);
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
     color: white;
     padding: 10px;
+    border-radius: 10px;
   }
 
   a ul li {

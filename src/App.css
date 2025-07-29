@@ -442,7 +442,7 @@
 
 
   .display-menu {
-    background: white;
+    background: #ffffff82;
     width: 445px;
     height: 15px;
     padding: 15px;
@@ -456,3 +456,4 @@
     text-decoration: none;
   }
 }
+

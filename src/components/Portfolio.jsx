@@ -32,6 +32,8 @@ import phim from "../assets/phim-viet.png";
 import cpm from "../assets/cpm-paris.png";
 import Transfert from "../assets/transfert-en-autocar.png";
 import Davilone from "../assets/davilone-project.png";
+import Ready from "../assets/readyapp.jpg";
+import Gamy from "../assets/gamygo.jpg"
 
 // Maquettes
 import Maquette1 from "../assets/maquette01.png"
@@ -330,6 +332,32 @@ const unusedVariable = 'This variable is not used';
                             </div>
                         </a>
                     </div>
+
+                    <div class="ag-courses_item">
+                        <a href="https://read-y-app.vercel.app/" target="_blank" rel="noopener noreferrer" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+
+                            <div class="ag-courses-item_title">
+                                <img src={Ready} alt="" className="img-port" />
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="ag-courses_item">
+                        <a href="https://gam-y-go.vercel.app/" target="_blank" rel="noopener noreferrer" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+
+                            <div class="ag-courses-item_title">
+                                <img src={Gamy} alt="" className="img-port" />
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    
+
 
 
 

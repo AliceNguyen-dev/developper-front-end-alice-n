@@ -1,202 +1,181 @@
-.menuVisible {
-    visibility: visible;
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 15px;
-    margin-right: 5%;
+/* src/components/Navbar.css */
+
+/* General Navbar Container */
+.navbar-container {
+  background-color: transparent; /* Assuming a background from parent or a full-width image/gradient behind it */
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  align-items: center;
+
+  /* --- IMPORTANT: Changes for fixed Navbar --- */
+  position: fixed; /* Make the Navbar fixed to the viewport */
+  top: 0;          /* Position it at the very top */
+  left: 0;         /* Position it at the very left */
+  width: 100%;     /* Ensure it spans the full width of the viewport */
+  z-index: 1000;   /* Ensure it stays on top of other content when scrolling */
+  /* --- End important changes --- */
+
+  box-sizing: border-box; /* Include padding in width */
 }
 
-.burgerVisible {
-    visibility: hidden;
+/* Navbar Brand/Logo */
+.navbar-brand {
+  position: absolute; /* Position independently */
+  left: 50px; /* Adjust as needed */
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #B9375D; /* White for better contrast on a potentially dark background */
+  text-decoration: none;
+  z-index: 1001; /* Above other elements if overlapping */
 }
 
-@media only screen and (max-width: 620px) {
-
-    /* For mobile phones: */
-    .burgerVisible {
-        visibility: visible;
-    }
-
-    .menuVisible {
-        visibility: hidden;
-    }
+/* Desktop Navigation Links */
+.menu-desktop {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  border-radius: 30px; /* Rounded corners for the container */
+  padding: 8px 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
 }
 
-.bm-menu-wrap {
-    position: fixed;
-    right: inherit;
-    z-index: 1100;
-    width: 440px !important;
-    height: 100%;
-    transition: all 0.5s ease 0s;
+.nav-item {
+  color: #B9375D; /* Light gray for inactive links */
+  text-decoration: none;
+  font-size: 1.1em;
+  padding: 8px 20px; /* Padding for each link */
+  border-radius: 25px; /* Rounded corners for the link background */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap; /* Prevent text wrapping */
+  margin: 0 5px; /* Small spacing between links */
 }
 
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
+  color: #B9375D; /* White text on hover */
+}
+
+.nav-item.active-link {
+  background: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); /* Gradient background for active link */
+  color: #5d3a77; /* Darker color for active text for contrast */
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for active link */
+}
+
+
+/* Hide mobile menu by default */
+.menu-mobile {
+  display: none;
+}
+
+/* --- React Burger Menu specific styling (customize further if needed) --- */
+/* Burger Button */
 .bm-burger-button {
-    display: none;
+  position: fixed; /* Fixed position */
+  width: 30px;
+  height: 25px;
+  right: 20px; /* Adjust distance from right */
+  top: 20px; /* Adjust distance from top */
+  z-index: 1100; /* Ensure it's on top of everything */
 }
 
-/* Position and sizing of burger button */
-.bm-burger-button {
-    position: absolute;
-    width: 36px;
-    height: 30px;
-    right: 32px;
-    top: 26px;
-}
-
-/* Color/shape of burger icon bars */
+/* Burger Bar Lines */
 .bm-burger-bars {
-    background: #373a47;
+  background: #fff; /* White lines for burger icon */
 }
 
-/* Position and sizing of clickable cross button */
+/* Burger Cross (X icon when menu is open) */
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
-/* Color/shape of close button cross */
 .bm-cross {
-    background: #bdc3c7;
+  background: #bdc3c7; /* Light gray for cross icon */
 }
 
-/* General sidebar styles */
+/* Menu Wrap (the actual slide-out menu) */
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0; /* Ensure it starts from the very top */
+  z-index: 1050; /* Below burger button but above content */
+}
+
+/* Menu */
 .bm-menu {
-    background: #f5b971;
-    padding: 7.5em 6.5em 0;
-    font-size: 20px;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); /* Shadow on the menu edge */
+  width: 135%;
 }
 
-.menu-items {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 15px auto;
+/* Morph Shape (for specific menu types, like elastic) */
+.bm-morph-shape {
+  fill: #373a47;
 }
 
-
-
-
-
-
-
-
-.Header {
-    position: fixed;
-    top: 0;
-    /* Stick it to the top */
-    max-height: 70px;
-    width: 100vw;
-
-    display: grid;
-    grid-template-areas: "logo nav";
-
-    /* Cosmetics */
-    background-color: #282c34;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+/* Item List (container for menu items) */
+.bm-item-list {
+  color: #B9375D;
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items in the mobile menu */
+  gap: 15px; /* Spacing between mobile menu items */
 }
 
-.Logo {
-    grid-area: logo;
-    height: 70px;
+/* Individual Menu Item */
+.bm-item {
+  display: block;
+  padding: 10px 20px;
+  color: #B9375D;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make items fill width */
+  text-align: center;
+  border-radius: 5px; /* Slightly rounded corners for mobile items */
 }
 
-.Nav {
-    display: grid;
-    grid-area: nav;
-    grid-template-columns: repeat(4, auto);
-    align-items: center;
-    justify-items: center;
+.bm-item:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover for mobile links */
 }
 
-.Nav a {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    transition: 0.5s;
-    text-decoration: none;
+/* Overlay (darkens content when menu is open) */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  top: 0; /* Ensure overlay covers whole screen */
+  left: 0;
 }
 
-.Nav a:hover {
-    transform: scale(1.1);
+/* --- Responsive Layout --- */
+@media (max-width: 768px) {
+  .navbar-container {
+    justify-content: space-between; /* Brand on left, burger on right */
+    padding: 15px 20px;
+  }
+
+  .navbar-brand {
+    position: relative; /* Let it flow with flexbox */
+    left: auto;
+  }
+
+  .menu-desktop {
+    display: none; /* Hide desktop menu on smaller screens */
+  }
+
+  .menu-mobile {
+    display: block; /* Show burger menu on smaller screens */
+  }
 }
 
-.Nav button {
-    padding: 10px;
-    outline: none;
-    border: none;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 600;
-    background-color: rgba(255, 0, 0, 0.5);
-    box-shadow: 0px 5px 0px 0px rgba(255, 0, 0, 0.25);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 70ms;
-}
-
-.Nav button:active {
-    transform: translateY(3px);
-    box-shadow: 0px 2px 0px 0px rgba(255, 0, 0, 0.25);
-}
-
-.Burger {
-    display: none;
-    grid-area: burger;
-    margin: 0 20px 0 0;
-    padding: 0;
-    justify-self: end;
-    font-size: 40px;
-    border: none;
-    background: none;
-    outline: none;
-    transition: 0.1s;
-}
-
-.Burger:active {
-    transform: scale(1.2);
-}
-
-@media (max-width: 700px) {
-    .Header {
-        grid-template-areas: "logo burger" "nav nav";
-    }
-
-    .Nav {
-        grid-template-rows: repeat(4, auto);
-        grid-template-columns: none;
-        grid-row-gap: 20px;
-
-        padding: 30px 0 30px;
-        background: rgba(40, 44, 47, 0.95);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-
-    .Burger {
-        display: inline;
-    }
-}
-
-.NavAnimation-enter {
-    opacity: 0;
-    transform: scale(0.5);
-}
-
-.NavAnimation-enter-active {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 350ms, transform 350ms;
-}
-
-.NavAnimation-exit {
-    opacity: 1;
-}
-
-.NavAnimation-exit-active {
-    opacity: 0;
-    transform: scale(0.5);
-    transition: opacity 350ms, transform 350ms;
+/* Adjust burger button position if navbar is not full width or has padding */
+@media (max-width: 768px) {
+  .bm-burger-button {
+    right: 20px; /* Adjust to match navbar padding */
+    top: 15px; /* Adjust to align with smaller navbar height */
+  }
 }

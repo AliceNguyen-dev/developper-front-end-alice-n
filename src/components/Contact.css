@@ -1,287 +1,231 @@
-/* responsive mobile */
-@media screen and (max-width:767px) {
+/* src/components/Contact.css */
 
-    .para-contact{
-        font-size: 17px;
-    text-align: center;
-    color: #281e44;
-    }
-
-    .title-contact{
-        font-size: 20px;
-        text-align: center;
-        background-color: #ffc09836;
-        width: 50%;
-        padding: 10px;
-        margin: 10px auto;
-        font-family: "Roboto Flex", serif;
-        font-optical-sizing: auto;
-    }
-
-
-
-    .sect1 {
-        animation: fadeInLeft 1s ease-in-out;
-    }
-
-    @keyframes fadeInLeft {
-        0% {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    .sect2 {
-        animation: fadeInRight 1s ease-in-out;
-    }
-
-    @keyframes fadeInRight {
-        from {
-            opacity: 0;
-            transform: translateX(300px);
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    .coord {
-        display: grid;
-        grid-template-columns: auto;
-        padding: 2px;
-        gap: 2px;
-        margin: 10px auto;
-        justify-content: center;
-    }
-
-    .messApp {
-        background-color: rgb(238, 245, 250);
-        margin: 20px auto;
-        width: 90%;
-        height: 430px;
-        text-align: center;
-        padding: 10px;
-
-    }
-
-    .tab-info {
-        display: grid;
-        grid-template-columns: auto auto;
-        padding: 20px;
-        gap: 2px;
-    }
-
-    input[type="text" i] {
-        border-radius: 10px;
-        border-color: transparent;
-        height: 40px;
-        width: 210px;
-    }
-
-    input[type="text-area" i] {
-        border-radius: 10px;
-        border-color: transparent;
-        height: 40px;
-        width: 210px;
-    }
-
-    input[type="email" i] {
-        border-radius: 10px;
-        border-color: transparent;
-        height: 40px;
-        width: 210px;
-    }
-
-    .btn-contact {
-        width: 220px;
-        height: 55px;
-        margin: 15px auto;
-        padding: 10px;
-        border-radius: 10px;
-        border-color: transparent;
-        background: #3c84f7;
-        color: white;
-        font-size: 17px;
-        font-family: 'Now Bold', sans-serif;
-        text-align: center;
-    }
-
-    .form-label {
-        font-family: 'Now Bold', sans-serif;
-        font-size: 15px;
-        color: gray;
-    }
-
-    .imgG {
-        width: 96%;
-        height: 275px;
-    }
-
-    .space-bas {
-        text-align: end;
-        margin: 10px;
-        padding: 10px;
-    }
+/* General Styles for Contact Section */
+.contact-main {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f8f8f8; /* A soft background */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-/* Tablettes en mode portrait */
-@media screen and (max-width: 991px) {}
-
-
-/* responsive desktop */
-@media screen and (min-width:1200px) {
-
-    .para-contact{
-        font-size: 17px;
-    text-align: center;
-    color: #281e44;
-    }
-
-    .title-contact{
-        font-size: 20px;
-        text-align: center;
-        background-color: #ffc09836;
-        width: 50%;
-        padding: 10px;
-        margin: 10px auto;
-        font-family: "Roboto Flex", serif;
-        font-optical-sizing: auto;
-    }
-
-
-    .sect1 {
-        animation: fadeInLeft 1s ease-in-out;
-    }
-
-    @keyframes fadeInLeft {
-        0% {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    .sect2 {
-        animation: fadeInRight 1s ease-in-out;
-    }
-
-    @keyframes fadeInRight {
-        from {
-            opacity: 0;
-            transform: translateX(300px);
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    .coord {
-        display: grid;
-        grid-template-columns: auto auto;
-        padding: 2px;
-        gap: 2px;
-        margin: 10px auto;
-        justify-content: center;
-    }
-
-    .messApp {
-        background-color: rgb(238, 245, 250);
-        margin: 20px auto;
-        width: 90%;
-        height: 430px;
-        text-align: center;
-        padding: 10px;
-
-    }
-
-    .tab-info {
-        display: grid;
-        grid-template-columns: auto auto;
-        padding: 20px;
-        gap: 2px;
-        justify-content: center;
-    }
-
-    input[type="text" i] {
-        border-radius: 10px;
-        border-color: transparent;
-        height: 40px;
-        width: 500px;
-    }
-
-    input[type="text-area" i] {
-        border-radius: 10px;
-        border-color: transparent;
-        height: 40px;
-        width: 500px;
-    }
-
-    input[type="email" i] {
-        border-radius: 10px;
-        border-color: transparent;
-        height: 40px;
-        width: 500px;
-    }
-
-    
-
-    .btn-contact {
-        width: 220px;
-        height: 55px;
-        margin: 15px auto;
-        padding: 10px;
-        border-radius: 10px;
-        border-color: transparent;
-        background: #3c84f7;
-        color: white;
-        font-size: 17px;
-        font-family: 'Now Bold', sans-serif;
-    }
-
-    .form-label {
-        font-family: 'Now Bold', sans-serif;
-        font-size: 15px;
-        color: gray;
-    }
-
-    .imgG {
-        width: 60%;
-        height: 501px;
-    }
-
-    .space-bas {
-        text-align: end;
-        margin: 10px;
-        padding: 10px;
-    }
-
-    textarea{
-        width: 515px;
-        height: 190px;
-        border-radius: 15px;
-        font-size: 12px;
-        font-family: cursive;
-        padding: 10px;
-        color: #0A3981;
-    }
+.text-head {
+  margin-bottom: 40px;
 }
 
-.--btn-primary{
-    cursor: pointer;
+.title-contact {
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #ff894fa1;
+  margin-bottom: 15px;
 }
+
+.para-contact {
+  font-size: 1.1em;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Form Container */
 .mesApp {
-    background-color: #ffc09836;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
+/* Form Styling */
+.emailForm {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between form groups */
+}
+
+/* Accessibility: Visually hidden label */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Input and Textarea Styling */
+.form-group {
+  width: 100%;
+  position: relative; /* For potential future floating labels */
+}
+
+.emailForm input,
+.emailForm textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Slightly more rounded corners */
+  font-size: 1em;
+  color: #333; /* Darker text color */
+  background-color: #fcfcfc; /* Very light background for inputs */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  box-sizing: border-box; /* Include padding in width */
+  -webkit-appearance: none; /* Remove default browser styling for consistency */
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.emailForm input::placeholder,
+.emailForm textarea::placeholder {
+  color: #999; /* Softer placeholder text */
+  opacity: 1; /* Ensure full visibility across browsers */
+}
+
+.emailForm input:hover,
+.emailForm textarea:hover {
+  border-color: #bbb; /* Slightly darker border on hover */
+  background-color: #f5f5f5; /* Subtle background change on hover */
+}
+
+.emailForm input:focus,
+.emailForm textarea:focus {
+  border-color: #007bff; /* Primary blue border on focus */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Blue glow on focus */
+  outline: none; /* Remove default outline */
+  background-color: #fff; /* White background on focus */
+}
+
+.emailForm textarea {
+  min-height: 150px; /* Minimum height for textarea */
+  resize: vertical; /* Allow only vertical resizing */
+}
+
+/* Submit Button */
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-submit {
+  background-color: #ff894fa1;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  min-width: 200px;
+  letter-spacing: 0.5px; /* Slight letter spacing for appeal */
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.btn-submit:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Image at the Bottom */
+.space-bas {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.imgG {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Messages (Success/Error) */
+.status-message {
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 600px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out; /* Simple fade in animation for message */
+}
+
+.status-message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Responsive Design for Contact --- */
+@media (max-width: 768px) {
+  .contact-main {
+    padding: 40px 15px;
+  }
+
+  .title-contact {
+    font-size: 2em;
+  }
+
+  .para-contact {
+    font-size: 1em;
+  }
+
+  .emailForm {
+    padding: 25px;
+    gap: 15px;
+  }
+
+  .emailForm input,
+  .emailForm textarea {
+    padding: 12px 15px;
+    font-size: 0.95em;
+  }
+
+  .btn-submit {
+    padding: 12px 20px;
+    font-size: 1em;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .imgG {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-main {
+    padding: 30px 10px;
+  }
+
+  .emailForm {
+    padding: 20px;
+  }
+}
